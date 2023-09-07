@@ -1,53 +1,48 @@
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import Layout from "./component/base/Layout";
-import Books from "./pages/books";
-import SignIn from "./pages/signIn";
-import { useAppSelector } from "./containers/store";
-import { useEffect } from "react";
-import { getToken } from "./utilities/cookies";
+import Layout from "./components/Layout";
+import Login from "./page/login";
+import BooksManagement from "./page/booksManagement";
+import HomePage from "./page/homepage";
+import { useEffect, useState } from "react";
+import { useAppSelector } from "./container/store";
 import { useDispatch } from "react-redux";
-import { loginSuccess } from "./containers/Auth/actions";
+import { setAuthData } from "./container/Auth/actions";
+import Cookies from "js-cookie"
 
 function App() {
-  const dispatch = useDispatch();
+  const isAuth = useAppSelector((state) => state.authReducer.isAuth);
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    const token = getToken();
-    if(token) {
-      dispatch(loginSuccess());
+    const token = Cookies.get("token");
+    const username = Cookies.get("username");
+    if (token && username) {
+      dispatch(setAuthData({ username, token }))
     }
-  }, [])
+  }, []);
   return (
-    <>
-      <BrowserRouter>
-        <Layout>
-          <Switch>
-            <PrivateRoute
-              exact
-              path="/"
-              component={Books}
-              isAuthenticated={false}
-            />
-
-            <Route exact path="/sign-in" component={SignIn} />
-          </Switch>
-        </Layout>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route path="/sign-in" component={Login} />
+          <PrivateRoute
+            path="/books-management"
+            component={BooksManagement}
+            isAuthenticated={isAuth}
+          />
+          <Route path="/" component={HomePage} exact />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
 function PrivateRoute({ component: Component, isAuthenticated, ...rest }) {
-  const isAuth = useAppSelector((state) => state.authReducer.isAuth);
-  useEffect(() => {
-    console.log('PrivateRoute', isAuth)
-  }, [isAuth])
-
   return (
     <Route
       {...rest}
       render={(props) =>
-        isAuth ? (
+        isAuthenticated ? (
           <Component {...props} />
         ) : (
           <Redirect

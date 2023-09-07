@@ -1,4 +1,4 @@
-import apiService from "../utilities/request.service"
+import apiService from "../page/utils/request.service"
 
 export const loginApi = async ({username, password}) => {
   return await apiService()({

@@ -1,4 +1,4 @@
-import apiService from "../utilities/request.service"
+import apiService from "../page/utils/request.service"
 
 export const getListBookApi = async (page) => {
   return await apiService()({
@@ -17,6 +17,7 @@ export const createBookApi = async (data) => {
     method: "post",
     data
   })
+  console.log('createBookApi', res)
   return res
 } 
 
@@ -25,6 +26,7 @@ export const deleteBookApi = async (id) => {
     url: `/api/v1/auth/books/${id}`,
     method: "delete",
   })
+  console.log('createBookApi', res)
   return res
 } 
 
