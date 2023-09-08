@@ -18,7 +18,7 @@ const Container = styled("div")`
   }
 
   button {
-    background-color: aqua;
+    background-color: red;
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
