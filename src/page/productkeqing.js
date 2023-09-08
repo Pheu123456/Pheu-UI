@@ -1,14 +1,12 @@
-  import React from "react";
+import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 
 
 function Productkeqing(){
     return(
   <div>
-
-
-
     <div className="main-product">
       
     <div className = "card-wrapper">
@@ -17,31 +15,31 @@ function Productkeqing(){
         <div className = "product-imgs">
           <div className = "img-display">
             <div className = "img-showcase">
-              <img src = "public/assets/product/keqing1.jpg" alt = "shoe image"/>
-              <img src = "assets/product/keqing2.jpg" alt = "shoe image"/>
-              <img src = "assets/product/keqing3.jpg" alt = "shoe image"/>
-              <img src = "assets/product/keqing4.jpg" alt = "shoe image"/>
+              <img src = "assets/keqing1.jpg" alt = "shoe image"/>
+              <img src = "assets/keqing2.jpg" alt = "shoe image"/>
+              <img src = "assets/keqing3.jpg" alt = "shoe image"/>
+              <img src = "assets/keqing4.jpg" alt = "shoe image"/>
             </div>
           </div>
           <div className = "img-select">
             <div className = "img-item">
               <a href = "#" data-id = "1">
-                <img src = "assets/product/keqing1.jpg" alt = "shoe image"/>
+                <img src = "assets/keqing1.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div className = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "assets/product/keqing2.jpg" alt = "shoe image"/>
+                <img src = "assets/keqing2.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div className = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "assets/product/keqing3.jpg" alt = "shoe image"/>
+                <img src = "assets/keqing3.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div className = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "assets/product/keqing4.jpg" alt = "shoe image"/>
+                <img src = "assets/keqing4.jpg" alt = "shoe image"/>
               </a>
             </div>
           </div>
@@ -111,7 +109,7 @@ function Productkeqing(){
             
             </div>
             
-            <button type = "button" className = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+            <button type = "button" class = "btn" >Mua ngay</button>
               
             
           </div>
@@ -157,7 +155,7 @@ function Productkeqing(){
               </div>
               <h4>25,900,000đ</h4>
             </div>
-            <a href="#"><i className="fal fa-shopping-cart cart"></i></a>
+            <Link to="#"><i className="fal fa-shopping-cart cart"></i></Link>
           </div>
           <div className="pro">
             <img src="assets/nahida.png" atl=""/>
@@ -173,7 +171,7 @@ function Productkeqing(){
               </div>
               <h4>15.900,000đ</h4>
             </div>
-            <a href="#"><i className="fal fa-shopping-cart cart"></i></a>
+            <Link to="#"><i className="fal fa-shopping-cart cart"></i></Link>
           </div>
           <div className="pro">
             <img src="assets/sakura ink.jpg" atl=""/>
@@ -197,7 +195,7 @@ function Productkeqing(){
               <span>Keycab</span>
               <h5>Keycap Blue Cats Theme</h5>
               <div className="star">
-                <i className="fas fa-star"></i>
+                <Link to className="fas fa-star"></Link>
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>   

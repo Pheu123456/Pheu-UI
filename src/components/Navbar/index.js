@@ -13,7 +13,7 @@ const Container = styled("div")`
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    background-color: #C95B3F;
     color: var(--textColor);
   }
 
@@ -108,11 +108,11 @@ function Navbar() {
   return (
     <Container>
       <header>
-        <h3>{`S3LAP${userData?.username ? ` - username: ${userData?.username}` : ''}`}</h3>
+        <h3>{`Pheu Gear${userData?.username ? ` - username: ${userData?.username}` : ''}`}</h3>
         <nav ref={navRef}>
           <Link to="/">Trang chủ</Link>
 
-          {isAuth && <Link to="/books-management">Quản lý sách</Link>}
+          {isAuth && <Link to="/books-management">Danh Sách Mua Đồ</Link>}
           {!isAuth && <Link to="/sign-in">Đăng Nhập </Link>}
 
           {isAuth && <button className="logout-btn" onClick={logout}>Đăng xuất</button>}

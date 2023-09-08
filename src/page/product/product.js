@@ -2,6 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function Product(){
     return(
        <div>
@@ -99,7 +100,7 @@ function Product(){
             
             </div>
             
-            <button type = "button" className = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+            <button type = "button" class = "btn" > Mua ngay</button>
               
             
           </div>

@@ -16,31 +16,31 @@ function Productgengar(){
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "assets/product/gengar.webp" alt = "shoe image"/>
-              <img src = "assets/product/gengar2.webp" alt = "shoe image"/>
-              <img src = "assets/product/gengar3.webp" alt = "shoe image"/>
-              <img src = "assets/product/gengar4.jpg" alt = "shoe image"/>
+              <img src = "assets/gengar.webp" alt = "shoe image"/>
+              <img src = "assets/gengar2.webp" alt = "shoe image"/>
+              <img src = "assets/gengar3.webp" alt = "shoe image"/>
+              <img src = "assets/gengar4.jpg" alt = "shoe image"/>
             </div>
           </div>
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
-                <img src = "assets/product/gengar.webp" alt = "shoe image"/>
+                <img src = "assets/gengar.webp" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "assets/product/gengar2.webp" alt = "shoe image"/>
+                <img src = "assets/gengar2.webp" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "assets/product/gengar3.webp" alt = "shoe image"/>
+                <img src = "assets/gengar3.webp" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "assets/product/gengar4.jpg" alt = "shoe image"/>
+                <img src = "assets/gengar4.jpg" alt = "shoe image"/>
               </a>
             </div>
           </div>
@@ -104,7 +104,7 @@ function Productgengar(){
             
             </div>
             
-            <button type = "button" class = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+            <button type = "button" class = "btn" > Mua ngay</button>
               
             
           </div>

@@ -100,7 +100,7 @@ const BookContainer = styled("div")`
 const Book = (props) => {
   const { data, onDelete, onEdit } = props;
   const thumb =
-    "https://truyenaudiocv.org/uploads/manga/nguoi-tai-dau-pha-viet-nhat-ky-nu-chinh-toan-bo-mong/cover/cover_thumb.jpg";
+    "https://cdn.discordapp.com/attachments/984481824065617952/1149554618179780699/customkeyboard3.jpg";
   return (
     <BookContainer container spacing={2} onClick={() => {}}>
       <div className="grid-item">
@@ -110,10 +110,10 @@ const Book = (props) => {
       </div>
       <div className="grid-item">
         <h2 className="book-title">{data.title}</h2>
-        <p className="author-text">Tác giả: {data.author}</p>
+        <p className="author-text">Tên sản phẩm: {data.author}</p>
       </div>
       <div className="grid-item">
-        <p className="part-number">{data.parts} tập</p>
+        <p className="part-number">{data.parts} số lượng</p>
       </div>
       <div className="grid-item text-right">
         <p className="time">{timeSince(data.updated_at)}</p>

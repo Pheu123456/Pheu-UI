@@ -2,6 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function Productklee(){
     return(
 <div>
@@ -16,31 +17,31 @@ function Productklee(){
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "assets/product/klee.jpg" alt = "shoe image"/>
-              <img src = "assets/product/klee2.jpg" alt = "shoe image"/>
-              <img src = "assets/product/klee3.jpg" alt = "shoe image"/>
-              <img src = "passets/roduct/klee4.jpg" alt = "shoe image"/>
+              <img src = "assets/klee.jpg" alt = "shoe image"/>
+              <img src = "assets/klee2.jpg" alt = "shoe image"/>
+              <img src = "assets/klee3.jpg" alt = "shoe image"/>
+              <img src = "assets/klee4.jpg" alt = "shoe image"/>
             </div>
           </div>
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
-                <img src = "assets/product/klee.jpg" alt = "shoe image"/>
+                <img src = "assets/klee.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "assets/product/klee2.jpg" alt = "shoe image"/>
+                <img src = "assets/klee2.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "assets/product/klee3.jpg" alt = "shoe image"/>
+                <img src = "assets/klee3.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "assets/product/klee4.jpg" alt = "shoe image"/>
+                <img src = "assets/klee4.jpg" alt = "shoe image"/>
               </a>
             </div>
           </div>
@@ -105,7 +106,7 @@ function Productklee(){
             
             </div>
             
-            <button type = "button" class = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+            <button type = "button" class = "btn" > Mua ngay</button>
               
             
           </div>

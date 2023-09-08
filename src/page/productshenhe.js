@@ -2,6 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function Productshenhe(){
     return(
         <div>
@@ -17,31 +18,31 @@ function Productshenhe(){
             <div class = "product-imgs">
               <div class = "img-display">
                 <div class = "img-showcase">
-                  <img src = "assets/product/shenhe.jpg" alt = "shoe image"/>
-                  <img src = "assets/product/shenhe1.jpg" alt = "shoe image"/>
-                  <img src = "assets/product/shenhe2.jpg" alt = "shoe image"/>
-                  <img src = "assets/product/shenhe3.jpg" alt = "shoe image"/>
+                  <img src = "assets/shenhe.jpg" alt = "shoe image"/>
+                  <img src = "assets/shenhe1.jpg" alt = "shoe image"/>
+                  <img src = "assets/shenhe2.jpg" alt = "shoe image"/>
+                  <img src = "assets/shenhe3.jpg" alt = "shoe image"/>
                 </div>
               </div>
               <div class = "img-select">
                 <div class = "img-item">
                   <a href = "#" data-id = "1">
-                    <img src = "assets/product/shenhe.jpg" alt = "shoe image"/>
+                    <img src = "assets/shenhe.jpg" alt = "shoe image"/>
                   </a>
                 </div>
                 <div class = "img-item">
                   <a href = "#" data-id = "2">
-                    <img src = "assets/product/shenhe1.jpg" alt = "shoe image"/>
+                    <img src = "assets/shenhe1.jpg" alt = "shoe image"/>
                   </a>
                 </div>
                 <div class = "img-item">
                   <a href = "#" data-id = "3">
-                    <img src = "assets/product/shenhe2.jpg" alt = "shoe image"/>
+                    <img src = "assets/shenhe2.jpg" alt = "shoe image"/>
                   </a>
                 </div>
                 <div class = "img-item">
                   <a href = "#" data-id = "4">
-                    <img src = "product/shenhe3.jpg" alt = "shoe image"/>
+                    <img src = "assets/shenhe3.jpg" alt = "shoe image"/>
                   </a>
                 </div>
               </div>
@@ -105,7 +106,7 @@ function Productshenhe(){
                 
                 </div>
                 
-                <button type = "button" class = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+                <button type = "button" class = "btn" > Mua ngay</button>
                   
                 
               </div>

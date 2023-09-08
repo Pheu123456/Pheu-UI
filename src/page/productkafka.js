@@ -2,6 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function Productkafka(){
     return(
 <div>
@@ -15,31 +16,31 @@ function Productkafka(){
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "assets/product/kafka.jpg" alt = "shoe image"/>
-              <img src = "assets/product/kafka2.jpg" alt = "shoe image"/>
-              <img src = "assets/product/kafka3.jpg" alt = "shoe image"/>
-              <img src = "assets/product/kafka4.jpg" alt = "shoe image"/>
+              <img src = "assets/kafka.jpg" alt = "shoe image"/>
+              <img src = "assets/kafka2.jpg" alt = "shoe image"/>
+              <img src = "assets/kafka3.jpg" alt = "shoe image"/>
+              <img src = "assets/kafka4.jpg" alt = "shoe image"/>
             </div>
           </div>
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
-                <img src = "assets/product/kafka.jpg" alt = "shoe image"/>
+                <img src = "assets/kafka.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "assets/product/kafka2.jpg" alt = "shoe image"/>
+                <img src = "assets/kafka2.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "assets/product/kafka3.jpg" alt = "shoe image"/>
+                <img src = "assets/kafka3.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "assets/product/kafka4.jpg" alt = "shoe image"/>
+                <img src = "assets/kafka4.jpg" alt = "shoe image"/>
               </a>
             </div>
           </div>
@@ -103,7 +104,7 @@ function Productkafka(){
             
             </div>
             
-            <button type = "button" class = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+            <button type = "button" class = "btn" > Mua ngay</button>
               
             
           </div>

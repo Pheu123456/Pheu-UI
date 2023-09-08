@@ -2,6 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function Producthutao(){
     return(
         <div>
@@ -15,31 +16,31 @@ function Producthutao(){
             <div class = "product-imgs">
               <div class = "img-display">
                 <div class = "img-showcase">
-                  <img src = "assets/product/hutao.jpg" alt = "shoe image"/>
-                  <img src = "assets/product/hutao2.jpg" alt = "shoe image"/>
-                  <img src = "assets/product/hutao3.jpg" alt = "shoe image"/>
-                  <img src = "assets/product/hutao4.jpg" alt = "shoe image"/>
+                  <img src = "assets/hutao.jpg" alt = "shoe image"/>
+                  <img src = "assets/hutao2.jpg" alt = "shoe image"/>
+                  <img src = "assets/hutao3.jpg" alt = "shoe image"/>
+                  <img src = "assets/hutao4.jpg" alt = "shoe image"/>
                 </div>
               </div>
               <div class = "img-select">
                 <div class = "img-item">
                   <a href = "#" data-id = "1">
-                    <img src = "assets/product/hutao.jpg" alt = "shoe image"/>
+                    <img src = "assets/hutao.jpg" alt = "shoe image"/>
                   </a>
                 </div>
                 <div class = "img-item">
                   <a href = "#" data-id = "2">
-                    <img src = "assets/product/hutao2.jpg" alt = "shoe image"/>
+                    <img src = "assets/hutao2.jpg" alt = "shoe image"/>
                   </a>
                 </div>
                 <div class = "img-item">
                   <a href = "#" data-id = "3">
-                    <img src = "assets/product/hutao3.jpg" alt = "shoe image"/>
+                    <img src = "assets/hutao3.jpg" alt = "shoe image"/>
                   </a>
                 </div>
                 <div class = "img-item">
                   <a href = "#" data-id = "4">
-                    <img src = "assets/product/hutao4.jpg" alt = "shoe image"/>
+                    <img src = "assets/hutao4.jpg" alt = "shoe image"/>
                   </a>
                 </div>
               </div>
@@ -102,7 +103,7 @@ function Producthutao(){
                 
                 </div>
                 
-                <button type = "button" class = "btn" ><Link to='/checkout' style={{color: 'white'}}>Mua ngay</Link></button>
+                <button type = "button" class = "btn" > Mua ngay</button>
                   
                 
               </div>

@@ -8,7 +8,6 @@ import { useAppSelector } from "./container/store";
 import { useDispatch } from "react-redux";
 import { setAuthData } from "./container/Auth/actions";
 import Cookies from "js-cookie"
-import Checkout from "./page/checkout/checkout";
 import SignUp from "./page/signUp";
 import Productkeqing from './page/productkeqing';
 import Productcustom from './page/productcustom';
@@ -21,6 +20,8 @@ import Productklee from './page/productklee';
 import Productshenhe from './page/productshenhe';
 import Productyaemiko from './page/productyaemiko';
 import Product from './page/product/product';
+import ListBooks from "./components/ListBooks";
+import { listBook } from "./page/utils/data";
 
 
 
@@ -40,7 +41,6 @@ function App() {
       <Layout>
         <Switch>
              <Route path="/sign-in" component={Login} />
-             <Route path= '/Checkout' component={Checkout} /> 
              <Route path="/sign-up" component={SignUp} />
              <Route path='/productcustom' element={Productcustom} />
              <Route path='/productfuhua' componentt={Productfuhua} />
@@ -54,6 +54,7 @@ function App() {
              <Route path='/productkeqing' component={Productkeqing} />
              <Route path='/product' component={Product}/>
              <Route path="/" component={HomePage} exact />
+             <Route path='/Listbooks' component={ListBooks}/>
             <PrivateRoute path="/books-management"component={BooksManagement}isAuthenticated={isAuth}/>
             
         </Switch>

@@ -16,31 +16,31 @@ function Productfuhua(){
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "assets/product/fuhua.jpg" alt = "shoe image"/>
-              <img src = "assets/product/fuhua2.jpg" alt = "shoe image"/>
-              <img src = "assets/product/fuhua3.jpg" alt = "shoe image"/>
-              <img src = "assets/product/fuhua4.jpg" alt = "shoe image"/>
+              <img src = "assets/fuhua.jpg" alt = "shoe image"/>
+              <img src = "assets/fuhua2.jpg" alt = "shoe image"/>
+              <img src = "assets/fuhua3.jpg" alt = "shoe image"/>
+              <img src = "assets/fuhua4.jpg" alt = "shoe image"/>
             </div>
           </div>
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
-                <img src = "assets/product/fuhua.jpg" alt = "shoe image"/>
+                <img src = "assets/fuhua.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "assets/product/fuhua2.jpg" alt = "shoe image"/>
+                <img src = "assets/fuhua2.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "assets/product/fuhua3.jpg" alt = "shoe image"/>
+                <img src = "assets/fuhua3.jpg" alt = "shoe image"/>
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "assets/product/fuhua4.jpg" alt = "shoe image"/>
+                <img src = "assets/fuhua4.jpg" alt = "shoe image"/>
               </a>
             </div>
           </div>
@@ -105,7 +105,7 @@ function Productfuhua(){
             
             </div>
             
-            <button type = "button" class = "btn" ><Link to='/checkout'style={{color: 'white'}}>Mua ngay</Link></button>
+            <button type = "button" class = "btn" > Mua ngay</button>
               
             
           </div>

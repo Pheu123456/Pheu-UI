@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import React from "react";
 import "./homepage.css";
+import { useAppSelector } from "../../container/store";
 import { Link } from "react-router-dom"
 const Container = styled("div")`   
 
@@ -14,6 +15,8 @@ const Container = styled("div")`
 `;
 
 const HomePage = () => {
+  const { isAuth, data: userData } = useAppSelector((state) => state.authReducer);
+
   return (
     <div>
 
@@ -96,7 +99,7 @@ const HomePage = () => {
           </div>
           <h4>9,900,000đ</h4>
         </div>
-        <Link to='/productkeqing'><i className="fal fa-shopping-cart cart"></i></Link>
+       {isAuth && <Link to='/productkeqing'><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/ganyukeyboard.jpg" atl=""/>
@@ -111,7 +114,7 @@ const HomePage = () => {
           </div>
           <h4>1,670,000đ</h4>
         </div>
-        <Link to='/productganyu'><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to='/productganyu'><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/sanpham2.jpg" atl=""/>
@@ -127,7 +130,7 @@ const HomePage = () => {
           </div>
           <h4>12,900,000đ</h4>
         </div>
-        <Link to='/productcustom'><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to='/productcustom'><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/sakura.jpg" atl=""/>
@@ -143,7 +146,7 @@ const HomePage = () => {
           </div>
           <h4>3,900,000đ</h4>
         </div>
-        <Link to="/productcustom"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productcustom"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/hutao.jpg" atl=""/>
@@ -159,7 +162,7 @@ const HomePage = () => {
           </div>
           <h4>14,900,000đ</h4>
         </div>
-        <Link to="/producthutao"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/producthutao"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/keycap_blossom.jpg" atl=""/>
@@ -175,7 +178,7 @@ const HomePage = () => {
           </div>
           <h4>29,000,000đ</h4>
         </div>
-        <Link to="/product"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/product"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/shenhe.jpg" atl=""/>
@@ -191,7 +194,7 @@ const HomePage = () => {
           </div>
           <h4>59,000,000đ</h4>
         </div>
-        <Link to="/productshenhe"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productshenhe"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/yaemiko.jpg" atl=""/>
@@ -207,7 +210,7 @@ const HomePage = () => {
           </div>
           <h4>15,000,000đ</h4>
         </div>
-        <Link to="/productyaemiko"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productyaemiko"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/klee.jpg" atl=""/>
@@ -223,7 +226,7 @@ const HomePage = () => {
           </div>
           <h4>69,000,000đ</h4>
         </div>
-        <Link to="/productklee"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productklee"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/Kafka.jpg" atl=""/>
@@ -239,7 +242,7 @@ const HomePage = () => {
           </div>
           <h4>19,000,000đ</h4>
         </div>
-        <Link to="/productkafka"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productkafka"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/HOS.jpg" atl=""/>
@@ -255,7 +258,7 @@ const HomePage = () => {
           </div>
           <h4>96,000,000đ</h4>
         </div>
-        <Link to="/productfuhua"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productfuhua"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/yaemiko2.jpg" atl=""/>
@@ -271,7 +274,7 @@ const HomePage = () => {
           </div>
           <h4>49,000,000đ</h4>
         </div>
-        <Link to="/productyaemiko"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productyaemiko"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
     </div>
   </section>
@@ -310,7 +313,7 @@ const HomePage = () => {
           </div>
           <h4>500,900,000đ</h4>
         </div>
-        <Link to="/productgengar"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth && <Link to="/productgengar"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/ganyukeyboard.jpg" atl=""/>
@@ -325,7 +328,7 @@ const HomePage = () => {
           </div>
           <h4>1,670,000đ</h4>
         </div>
-        <Link to="/productganyu"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to="/productganyu"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/sanpham2.jpg" atl=""/>
@@ -341,7 +344,7 @@ const HomePage = () => {
           </div>
           <h4>12,900,000đ</h4>
         </div>
-        <Link to="/productcustom"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to="/productcustom"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/sakura.jpg" atl=""/>
@@ -357,7 +360,7 @@ const HomePage = () => {
           </div>
           <h4>3,900,000đ</h4>
         </div>
-        <Link to="/product"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to="/product"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/hutao.jpg" atl=""/>
@@ -373,7 +376,7 @@ const HomePage = () => {
           </div>
           <h4>14,900,000đ</h4>
         </div>
-        <Link to="/producthutao"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to="/producthutao"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
       <div className="pro">
         <img src="assets/sanpham1.jpg" atl=""/>
@@ -389,7 +392,7 @@ const HomePage = () => {
           </div>
           <h4>900,000đ</h4>
         </div>
-        <Link to="/product"><i className="fal fa-shopping-cart cart"></i></Link>
+        {isAuth &&<Link to="/product"><i className="fal fa-shopping-cart cart"></i></Link>}
       </div>
     </div>
   </section>

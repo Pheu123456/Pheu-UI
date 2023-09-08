@@ -211,11 +211,11 @@ const CreateModal = ({ isOpen, setOpen, isActive }) => {
         <div class="modal-content animate">
           <div class="container">
             <label for="title">
-              <b>Tiêu đề</b>
+              <b>Tên sản phẩm</b>
             </label>
             <input
               type="text"
-              placeholder="Nhập tiêu đề"
+              placeholder="Nhập tên sản phẩm"
               name="title"
               // required
               // onInvalid={(e)=>{e.target.setCustomValidity("error msg:  Please enter your first name")}}
@@ -226,11 +226,11 @@ const CreateModal = ({ isOpen, setOpen, isActive }) => {
             />
 
             <label for="author">
-              <b>Tác giả</b>
+              <b>Số lượng</b>
             </label>
             <input
               type="text"
-              placeholder="Nhập tên tác giả"
+              placeholder="Nhập số lượng"
               name="author"
               onChange={onChangeInputHandler}
               // required
@@ -240,10 +240,10 @@ const CreateModal = ({ isOpen, setOpen, isActive }) => {
             />
 
             <label for="parts">
-              <b>Số chương</b>
+              <b>Loại switch</b>
             </label>
             <input
-              placeholder="Nhập tên số chương"
+              placeholder="Nhập loại switch"
               name="parts"
               type="number"
               onChange={onChangeInputHandler}
@@ -254,11 +254,11 @@ const CreateModal = ({ isOpen, setOpen, isActive }) => {
             />
 
             <label for="category">
-              <b>Thể loại</b>
+              <b>Nơi nhận</b>
             </label>
             <input
               type="number"
-              placeholder="Nhập tên thể loại"
+              placeholder="Nhập nơi nhận hàng"
               name="category"
               onChange={onChangeInputHandler}
               // required
@@ -266,7 +266,7 @@ const CreateModal = ({ isOpen, setOpen, isActive }) => {
               //   e.target.setCustomValidity('Nhập thể loại')
               // }
             />
-            <button onClick={handlerSubmit}>Tạo mới</button>
+            <button onClick={handlerSubmit}>Order</button>
           </div>
         </div>
       </div>
