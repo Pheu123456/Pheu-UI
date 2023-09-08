@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import { timeSince } from "../../../page/utils/timeSince";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
-
 const BookContainer = styled("div")`
   margin-bottom: 20px;
   margin-top: 0 !important;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
+import './productall.css';
 
 
 function Productshenhe(){
