@@ -5,7 +5,7 @@ import { login } from "../../container/Auth/actions";
 import { useAppSelector } from "../../container/store";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Cookies from "js-cookie"
-
+import { Link } from "react-router-dom";
 const Container = styled("div")`
   input[type="text"],
   input[type="password"] {
@@ -157,6 +157,8 @@ const Login = () => {
           />
 
           <button type="submit">Đăng nhập</button>
+          <Link to ='/sign-up' id="form-move">Don't have an account ?</Link>
+
         </div>
       </form>
     </Container>
