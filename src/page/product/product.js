@@ -15,7 +15,7 @@ function Product(){
         <div className = "product-imgs">
           <div className = "img-display">
             <div className = "img-showcase">
-              <img src = "public/assets/sakura_keycap1.jpg" alt = "shoe image"/>
+              <img src = "assets/sakura_keycap1.jpg" alt = "shoe image"/>
               <img src = "assets/sakura_keycap2.jpg" alt = "shoe image"/>
               <img src = "assets/sakura_keycap3.jpg" alt = "shoe image"/>
               <img src = "assets/sakura_keycap4.jpg" alt = "shoe image"/>
